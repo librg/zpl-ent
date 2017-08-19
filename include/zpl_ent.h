@@ -104,8 +104,8 @@ extern "C" {
     void ZPL_JOIN2(NAME,_init) (ZPL_JOIN2(NAME, _pool) *h, zple_pool *p, zpl_allocator_t a) { \
         ZPL_ASSERT(h&&p); h->backing = a; \
         h->count = p->count; \
-        zpl_buffer_init(h->entities, a, p->count); \
-        zpl_buffer_init(h->data, a, p->count); \
+        zpl_buffer_init(h->entities, a, zpl_size_of(ZPL_JOIN2(NAME, _meta_ent_t))*p->count); \
+        zpl_buffer_init(h->data, a, zpl_size_of(ZPL_JOIN2(NAME, _meta_ent_t))*p->count); \
     }\
     void ZPL_JOIN2(NAME,_free) (ZPL_JOIN2(NAME, _pool) *h) { \
         ZPL_ASSERT(h); \
