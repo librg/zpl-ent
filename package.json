@@ -1,6 +1,6 @@
 {
   "name": "zpl_ent.c",
-  "version": "2.1.1",
+  "version": "2.1.2",
   "description": "Fast and small entity system.",
   "main": "include/zpl.h",
   "directories": {

@@ -1,4 +1,4 @@
-# ZPL - Entity System module
+# ZPL - Entity System module [ABANDONED]
 [![npm version](https://badge.fury.io/js/zpl_ent.c.svg)](https://badge.fury.io/js/zpl_ent.c)
 
 This module offers zero-cost speed low memory footprint entity allocator and de-allocator.
